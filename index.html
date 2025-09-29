@@ -1,20 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yutong Wang</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人简介 | Your Name</title>
+  <style>
+    /* ---- 页面整体 ---- */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f0f6ff;             /* 淡蓝背景 */
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ---- 左侧菜单栏 ---- */
+    nav {
+      width: 220px;
+      background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+      color: white;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav h1 {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 12px 0;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #dbeafe; /* hover 变浅蓝 */
+    }
+
+    /* ---- 主内容区 ---- */
+    main {
+      flex: 1;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    section h2 {
+      color: #2563eb;
+      border-left: 6px solid #3b82f6;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 1.7;
+    }
+
+    /* ---- 响应式: 窄屏菜单移上方 ---- */
+    @media (max-width: 700px) {
+      body { flex-direction: column; }
+      nav { width: 100%; flex-direction: row; justify-content: space-around; }
+      nav h1 { display: none; }
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Yutong Wang</h1>
-    <p>Hello! I'm a developer/designer/etc.<br>
-       I love creating clean and functional web experiences.</p>
-    <div class="links">
-      <a href="ywang999@ucsb.edu">edu Email</a>
-      <a href="wangyutong0428@gmail.com">Email</a>
-    </div>
-  </div>
+
+  <!-- 左侧菜单栏 -->
+  <nav>
+    <h1>Your Name</h1>
+    <a href="#about">关于我</a>
+    <a href="#hobbies">爱好</a>
+    <a href="#publications">出版</a>
+  </nav>
+
+  <!-- 右侧主内容 -->
+  <main>
+    <section id="about">
+      <h2>关于我</h2>
+      <p>
+        这里填写你的个人简介：教育背景、研究方向、工作经验或兴趣概述。
+        例如：“我是一名软件工程师，热衷于人工智能和数据可视化。”
+      </p>
+    </section>
+
+    <section id="hobbies">
+      <h2>爱好</h2>
+      <p>
+        - 摄影：喜欢用镜头记录生活的美好瞬间。<br/>
+        - 跑步：保持健康并享受自然。<br/>
+        - 旅行：探索不同文化与风景。
+      </p>
+    </section>
+
+    <section id="publications">
+      <h2>出版</h2>
+      <p>
+        在这里列出你的论文、书籍或其他出版物：<br/>
+        1. 《示例论文标题》，Journal of Something, 2024.<br/>
+        2. 《另一篇论文》，Conference ABC, 2023.
+      </p>
+    </section>
+  </main>
+
 </body>
 </html>
+
