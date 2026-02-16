@@ -14,7 +14,7 @@
     min-height: 100vh;
   }
 
-  /* 左侧菜单 */
+  /* Menu */
   nav {
     width: 220px;
     background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
@@ -52,12 +52,12 @@
     box-sizing: border-box;
   }
   section {
-    display: none;               /* 默认隐藏 */
+    display: none;           
     opacity: 0;
     transition: opacity 0.4s;
   }
   section.active {
-    display: block;              /* 显示激活的 */
+    display: block;           
     opacity: 1;
   }
   section h2 {
@@ -87,6 +87,7 @@
   <h2>王雨桐</h2>
   <a data-target="about">Home</a>
   <a data-target="Research">Research</a>
+  <a data-target="Resume">Resume</a>
   <a data-target="Miscellaneous">Miscellaneous</a>
 </nav>
 
@@ -108,6 +109,21 @@
      </a></strong><br>
      <em>Computers and Electronics in Agriculture</em>, Volume 237, Part A, October 2025, 110491
     </li>
+  </section>
+
+  <section id="Resume">
+    <iframe 
+    src="files/Wang.Yutong.cv.pdf"
+    width="100%"
+    height="800px"
+    style="border: none;">
+  </iframe>
+
+  <p>
+    <a href="files/Wang.Yutong.cv.pdf" target="_blank">
+      📄 Download PDF
+    </a>
+  </p>
   </section>
   
   <section id="Miscellaneous">
