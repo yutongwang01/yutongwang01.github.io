@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="theme-color" content="#f5f1e8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }} · {{ site.name }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/UCSB.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>{{ title }} · {{ site.name }}</title>
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/tokens.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    {% if pageStyle %}<link rel="stylesheet" href="/assets/css/pages/{{ pageStyle }}.css">{% endif %}
+    <script src="/assets/js/main.js" defer></script>
+  </head>
+  <body class="page page--{{ pageKey }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include "components/header.njk" %}
+    <main id="main-content">
+      {{ content | safe }}
+    </main>
+    {% include "components/footer.njk" %}
+  </body>
+</html>

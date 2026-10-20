@@ -1,0 +1,11 @@
+:root {
+  --paper:#f5f1e8;--paper-deep:#e9e1d3;--ink:#102a43;--muted:#566575;
+  --accent:#1267a8;--accent-dark:#0b4f82;--line:rgba(16,42,67,.2);--sand:#b99454;
+  --display:"Iowan Old Style","Palatino Linotype",Baskerville,Georgia,serif;
+  --body:"Avenir Next",Avenir,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+  --s:-1;--text:clamp(1rem,.94rem + .25vw,1.14rem);--small:clamp(.78rem,.74rem + .18vw,.9rem);
+  --h3:clamp(1.55rem,1.25rem + 1.2vw,2.3rem);--h2:clamp(2.2rem,1.6rem + 2.4vw,3.8rem);
+  --hero:clamp(3.7rem,2.2rem + 6vw,7.5rem);--container:88rem;--gutter:clamp(1.25rem,4vw,4.5rem);
+  --ease:cubic-bezier(.22,1,.36,1);
+}

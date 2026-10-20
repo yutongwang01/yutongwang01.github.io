@@ -1,0 +1,13 @@
+<article class="publication">
+  <div class="publication__meta">
+    <span>{{ publication.year }}</span>
+    <span>{{ publication.journal }}</span>
+  </div>
+  <div class="publication__body">
+    <h3>{{ publication.title }}</h3>
+    <p>{{ publication.volume }}</p>
+  </div>
+  <a class="publication__link arrow-link" href="{{ publication.doi }}" target="_blank" rel="noreferrer">
+    <span>Read paper</span><span aria-hidden="true">↗</span>
+  </a>
+</article>

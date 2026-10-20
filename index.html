@@ -1,157 +1,119 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yutong Wang</title>
-<style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f0f6ff;
-    color: #333;
-    display: flex;
-    min-height: 100vh;
-  }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yutong Wang studies robust machine learning and deep learning for real-world applications at UC Santa Barbara.">
+    <meta name="theme-color" content="#f5f1e8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home · Yutong Wang">
+    <meta property="og:description" content="Yutong Wang studies robust machine learning and deep learning for real-world applications at UC Santa Barbara.">
+    <meta property="og:url" content="https://yutongwang01.github.io/">
+    <meta property="og:image" content="https://yutongwang01.github.io/assets/images/UCSB.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Home · Yutong Wang</title>
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/tokens.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/css/pages/home.css">
+    <script src="/assets/js/main.js" defer></script>
+  </head>
+  <body class="page page--home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+  <div class="site-header__inner container">
+    <a class="wordmark" href="/" aria-label="Yutong Wang, home">
+      <span>Yutong Wang</span>
+      <span class="wordmark__cn" lang="zh-Hans">王雨桐</span>
+    </a>
 
-  /* Menu */
-  nav {
-    width: 220px;
-    background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
-    color: white;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-  }
-  nav h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  nav h2 {
-    font-size: 1.8rem;
-    margin-top: 0;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 12px 0;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  nav a:hover {
-    color: #dbeafe;
-  }
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle__label">Menu</span>
+      <span class="nav-toggle__lines" aria-hidden="true"></span>
+    </button>
 
-  /* 主内容 */
-  main {
-    flex: 1;
-    padding: 40px;
-    box-sizing: border-box;
-  }
-  section {
-    display: none;           
-    opacity: 0;
-    transition: opacity 0.4s;
-  }
-  section.active {
-    display: block;           
-    opacity: 1;
-  }
-  section h2 {
-    color: #2563eb;
-    border-left: 6px solid #3b82f6;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-  }
-  p { 
-    line-height: 1.7;
-    font-size: 1.2rem;
-  }
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+      <ul>
 
-  /* 窄屏适配 */
-  @media (max-width: 700px) {
-    body { flex-direction: column; }
-    nav { width: 100%; flex-direction: row; justify-content: space-around; }
-    nav h1 { display: none; }
-  }
-</style>
-</head>
-<body>
+          <li>
+            <a href="/" class="is-active" aria-current="page">Home</a>
+          </li>
 
-<nav>
-  <h1>Yutong Wang</h1>
-  <h2>王雨桐</h2>
-  <a data-target="about">Home</a>
-  <a data-target="Research">Research</a>
-  <a data-target="Resume">Resume</a>
-  <a data-target="Miscellaneous">Miscellaneous</a>
-</nav>
+          <li>
+            <a href="/research/">Research</a>
+          </li>
 
-<main>
-  <section id="about" class="active">
-    <h2>About me</h2>
-    <p>
-      <img src="images/UCSB.jpg" alt="LEC" width="600"><br>
-      Hi! I am a Master’s student in Electrical and Computer Engineering at the University of California, Santa Barbara.<br>
-      My research interests focus on robustness in machine learning, as well as the cross-domain integration of deep learning for real-world applications.<br>
-      You can reach me at ywang999 [at] ucsb dot edu
-    </p>
-  </section>
-  
-  <section id="Research">
-    <li>
-     <strong><a href="https://doi.org/10.1016/j.compag.2025.110491" target="_blank">
-      A novel residual learning of multi-scale feature extraction model for the classification of rice grain varieties
-     </a></strong><br>
-     <em>Computers and Electronics in Agriculture</em>, Volume 237, Part A, October 2025, 110491
-    </li>
-  </section>
+          <li>
+            <a href="/resume/">Résumé</a>
+          </li>
 
-  <section id="Resume">
-    <iframe 
-    src="files/resume.pdf"
-    width="100%"
-    height="800px"
-    style="border: none;">
-  </iframe>
-    
-  </section>
-  
-  <section id="Miscellaneous">
-      <h2>Formula 1</h2>
-      <img src="images/lec.jpg" alt="LEC" width="600">
-      <p>
-        Forza Ferrari!<br>
-        I’m a tifosi, and my favorite drivers are Charles Leclerc 16 and Zhou Guanyu 24.<br><br>   
-      </p>
+          <li>
+            <a href="/beyond-research/">Beyond research</a>
+          </li>
 
-      <h2>Oklahoma City Thunder</h2>
-      <p>
-        I'm a superfan of the Thunder. Lovely to see them win the championship.<br>
-      </p>
-  </section>
-</main>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<script>
-  // 切换显示的脚本
-  const links = document.querySelectorAll('nav a');
-  const sections = document.querySelectorAll('main section');
+    <main id="main-content">
+      <section class="hero container" aria-labelledby="hero-title">
+  <div class="hero__copy reveal">
+    <p class="eyebrow">Electrical &amp; Computer Engineering <span aria-hidden="true">·</span> UC Santa Barbara</p>
+    <h1 id="hero-title">Yutong Wang</h1>
+    <p class="hero__chinese" lang="zh-Hans">王雨桐</p>
+    <p class="hero__statement">Robust machine learning for real-world systems.</p>
+    <p class="hero__intro">I am a master’s student in Electrical and Computer Engineering at UC Santa Barbara. My research focuses on robustness in machine learning and cross-domain deep learning for practical applications.</p>
+    <div class="hero__links">
+      <a class="arrow-link" href="/research/"><span>Explore my research</span><span aria-hidden="true">→</span></a>
+      <a class="text-link" href="mailto:ywang999@ucsb.edu">ywang999 [at] ucsb.edu</a>
+    </div>
+  </div>
 
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      const target = link.getAttribute('data-target');
-      sections.forEach(sec => {
-        sec.classList.toggle('active', sec.id === target);
-      });
-    });
-  });
-</script>
+  <figure class="hero__media reveal reveal--delay">
+    <img src="/assets/images/UCSB.jpg" alt="Henley Gate at the University of California, Santa Barbara" width="1707" height="1280">
+    <figcaption>Henley Gate · UC Santa Barbara</figcaption>
+  </figure>
+</section>
 
-</body>
+<section class="selected-work section container" aria-labelledby="selected-title">
+  <div class="section-heading reveal">
+    <div>
+      <p class="eyebrow">Current work</p>
+      <h2 id="selected-title">Selected research</h2>
+    </div>
+    <a class="arrow-link" href="/research/"><span>View all research</span><span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="publication-list reveal reveal--delay">
+
+
+        <article class="publication">
+  <div class="publication__meta">
+    <span>2025</span>
+    <span>Computers and Electronics in Agriculture</span>
+  </div>
+  <div class="publication__body">
+    <h3>A novel residual learning of multi-scale feature extraction model for the classification of rice grain varieties</h3>
+    <p>Volume 237, Part A, 110491</p>
+  </div>
+  <a class="publication__link arrow-link" href="https://doi.org/10.1016/j.compag.2025.110491" target="_blank" rel="noreferrer">
+    <span>Read paper</span><span aria-hidden="true">↗</span>
+  </a>
+</article>
+
+
+
+  </div>
+</section>
+
+    </main>
+    <footer class="site-footer">
+  <div class="site-footer__inner container">
+    <a href="mailto:ywang999@ucsb.edu">ywang999 [at] ucsb.edu</a>
+    <p>© 2026 Yutong Wang</p>
+  </div>
+</footer>
+
+  </body>
 </html>
-
-

@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: Research
+pageKey: research
+pageStyle: research
+description: Publications and research by Yutong Wang in robust machine learning and deep learning applications.
+permalink: /research/index.html
+---
+<header class="page-intro container reveal">
+  <p class="eyebrow">Research</p>
+  <h1>Learning systems that hold up outside the lab.</h1>
+  <p>I am interested in machine-learning robustness and in translating deep learning across domains where data, operating conditions, and real-world constraints rarely stay fixed.</p>
+</header>
+
+<section class="research-index section container" aria-labelledby="publications-title">
+  <div class="section-heading reveal">
+    <div>
+      <p class="eyebrow">Publications</p>
+      <h2 id="publications-title">Published work</h2>
+    </div>
+  </div>
+  <div class="publication-list reveal reveal--delay">
+    {% for publication in publications %}
+      {% include "components/publication-item.njk" %}
+    {% endfor %}
+  </div>
+</section>

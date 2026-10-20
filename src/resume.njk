@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Résumé
+pageKey: resume
+pageStyle: resume
+description: View Yutong Wang's résumé online.
+permalink: /resume/index.html
+---
+<header class="page-intro page-intro--compact container reveal">
+  <p class="eyebrow">Résumé</p>
+  <h1>Experience and education.</h1>
+  <p>The résumé is available to read directly below.</p>
+</header>
+
+<section class="resume-viewer container reveal reveal--delay" aria-label="Résumé document">
+  <object data="/files/resume.pdf#view=FitH" type="application/pdf">
+    <div class="resume-fallback">
+      <p>Your browser cannot display the embedded résumé.</p>
+      <a class="arrow-link" href="/files/resume.pdf" target="_blank"><span>Open the résumé in your browser</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </object>
+</section>
