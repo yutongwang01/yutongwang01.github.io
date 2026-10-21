@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="YW">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="王">
   <rect width="64" height="64" rx="10" fill="#102a43"/>
-  <path d="M12 16h9l11 17 11-17h9L36 40v9h-8v-9L12 16Z" fill="#f5f1e8"/>
+  <path d="M16 15H48M18 31H46M13 49H51M32 15V49" fill="none" stroke="#f5f1e8" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
 </svg>
