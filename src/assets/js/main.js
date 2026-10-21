@@ -35,9 +35,20 @@ document.querySelectorAll("[data-travel-dialog]").forEach(trigger=>{
 const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const yosemite=[37.8651,-119.5383];
-  const map=L.map(travelMapElement,{zoomControl:true,minZoom:1,maxZoom:18,worldCopyJump:true}).fitWorld({padding:[24,24]});
+  const worldBounds=L.latLngBounds([[-85.0511,-180],[85.0511,180]]);
+  const worldWidth=Math.max(window.innerWidth,256);
+  const initialZoom=Math.max(1,Math.min(4,Math.round(Math.log2(worldWidth/256))));
+  const map=L.map(travelMapElement,{
+    zoomControl:true,
+    minZoom:1,
+    maxZoom:18,
+    maxBounds:worldBounds,
+    maxBoundsViscosity:1
+  }).setView([20,0],initialZoom);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
     maxZoom:19,
+    noWrap:true,
+    bounds:worldBounds,
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   const marker=L.circleMarker(yosemite,{
