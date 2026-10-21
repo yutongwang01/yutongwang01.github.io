@@ -1,0 +1,21 @@
+@media (min-width: 901px) {
+  .hero {
+    gap: clamp(2rem, 4vw, 5rem);
+  }
+
+  .hero__copy {
+    min-width: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.7rem, 7vw, 6.8rem);
+  }
+
+  .hero__media {
+    margin-left: 0;
+  }
+
+  .hero__media::before {
+    display: none;
+  }
+}
