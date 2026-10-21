@@ -105,23 +105,45 @@
     </details>
   </article>
 
-  <article class="interest reveal">
-    <div class="map-plan" aria-hidden="true">
-      <svg viewBox="0 0 720 380" role="presentation">
-        <ellipse cx="360" cy="190" rx="265" ry="132"></ellipse>
-        <path d="M95 190h530M360 58c-82 52-82 212 0 264M360 58c82 52 82 212 0 264M126 123c126 45 342 45 468 0M126 257c126-45 342-45 468 0"></path>
-        <circle cx="206" cy="166" r="8"></circle>
-        <circle cx="292" cy="208" r="8"></circle>
-        <circle cx="465" cy="139" r="8"></circle>
-        <circle cx="523" cy="224" r="8"></circle>
-      </svg>
-      <span>Interactive map in progress</span>
-    </div>
+  <article class="interest interest--travel reveal">
     <div class="interest__copy">
       <p class="interest__number">03</p>
       <p class="eyebrow">Travel</p>
       <h2>A map of places and memories.</h2>
-      <p>I'm planning an interactive world map for this section. It will mark the places I've visited, with each location opening a small collection of photographs and memories.</p>
+      <p>Each marker opens an album from a place I have visited. The first is Yosemite National Park, photographed in October 2026.</p>
+    </div>
+
+    <div class="travel-map">
+      <div class="travel-map__surface">
+        <img class="travel-map__world" src="/assets/images/travel/world-map.svg" alt="" width="2048" height="1039" loading="lazy" aria-hidden="true">
+        <button class="travel-map__marker" type="button" style="--marker-x:18%;--marker-y:41%" aria-haspopup="dialog" aria-controls="yosemite-album" data-travel-dialog="yosemite-album">
+          <span class="travel-map__dot" aria-hidden="true"></span>
+          <span class="travel-map__label">Yosemite</span>
+          <span class="sr-only">Open the Yosemite National Park photo album</span>
+        </button>
+        <p class="travel-map__hint">Select a place</p>
+      </div>
+
+      <dialog class="travel-album" id="yosemite-album" aria-labelledby="yosemite-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div>
+              <p class="travel-album__meta">California / October 2026</p>
+              <h3 id="yosemite-album-title">Yosemite National Park</h3>
+            </div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">Granite walls, waterfalls, and a clear October sky.</p>
+          <div class="travel-album__gallery">
+            <img class="travel-album__overlook" src="/assets/images/travel/yosemite-overlook.jpg" alt="Panoramic view across Yosemite Valley from a high overlook beneath a blue sky" width="1800" height="1350" loading="lazy" decoding="async">
+            <img class="travel-album__waterfall" src="/assets/images/travel/yosemite-waterfall.jpg" alt="Waterfall descending a granite cliff among evergreen trees in Yosemite" width="1800" height="1350" loading="lazy" decoding="async">
+            <img class="travel-album__trail" src="/assets/images/travel/yosemite-waterfall-trail.jpg" alt="Steep waterfall trail beneath dramatic clouds in Yosemite" width="1200" height="1600" loading="lazy" decoding="async">
+            <img class="travel-album__lake" src="/assets/images/travel/yosemite-lake.jpg" alt="Granite peaks and pine trees reflected in still water in Yosemite" width="1800" height="1350" loading="lazy" decoding="async">
+            <img class="travel-album__el-capitan" src="/assets/images/travel/yosemite-el-capitan.jpg" alt="El Capitan rising above the trees in Yosemite Valley" width="1800" height="1350" loading="lazy" decoding="async">
+            <img class="travel-album__dinner" src="/assets/images/travel/yosemite-dinner.jpg" alt="Barbecue dinner during the Yosemite trip" width="1800" height="1350" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </dialog>
     </div>
   </article>
 </section>
