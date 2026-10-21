@@ -38,13 +38,14 @@ if(travelMapElement&&window.L){
   const worldBounds=L.latLngBounds([[-85.0511,-180],[85.0511,180]]);
   const worldWidth=Math.max(window.innerWidth,256);
   const initialZoom=Math.max(1,Math.min(4,Math.round(Math.log2(worldWidth/256))));
+  const initialCenter=window.innerWidth<720?[20,-30]:[20,0];
   const map=L.map(travelMapElement,{
     zoomControl:true,
     minZoom:1,
     maxZoom:18,
     maxBounds:worldBounds,
     maxBoundsViscosity:1
-  }).setView([20,0],initialZoom);
+  }).setView(initialCenter,initialZoom);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
     maxZoom:19,
     noWrap:true,
