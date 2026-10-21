@@ -1,3 +1,12 @@
+.hero h1 {
+  line-height: 0.9;
+  margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
+}
+
+.hero__statement {
+  margin-top: 0;
+}
+
 @media (min-width: 901px) {
   .hero {
     gap: clamp(2rem, 4vw, 5rem);
@@ -15,7 +24,4 @@
     margin-left: 0;
   }
 
-  .hero__media::before {
-    display: none;
-  }
 }
