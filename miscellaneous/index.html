@@ -15,8 +15,10 @@
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/css/tokens.css">
     <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
     <link rel="stylesheet" href="/assets/css/pages/miscellaneous.css">
     <link rel="stylesheet" href="/assets/css/refinements.css">
+    <script src="/assets/vendor/leaflet/leaflet.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
   </head>
   <body class="page page--miscellaneous">
@@ -114,14 +116,9 @@
     </div>
 
     <div class="travel-map">
-      <div class="travel-map__surface">
-        <img class="travel-map__world" src="/assets/images/travel/world-map.svg" alt="" width="2048" height="1039" loading="lazy" aria-hidden="true">
-        <button class="travel-map__marker" type="button" style="--marker-x:17%;--marker-y:30%" aria-haspopup="dialog" aria-controls="yosemite-album" data-travel-dialog="yosemite-album">
-          <span class="travel-map__dot" aria-hidden="true"></span>
-          <span class="travel-map__label">Yosemite</span>
-          <span class="sr-only">Open the Yosemite National Park photo album</span>
-        </button>
-        <p class="travel-map__hint">Select a place</p>
+      <div class="travel-map__surface" id="travel-map" data-travel-map data-album="yosemite-album" aria-label="Interactive map of places I have visited">
+        <img class="travel-map__fallback" src="/assets/images/travel/world-map.svg" alt="" width="2048" height="1039" loading="lazy" aria-hidden="true">
+        <p class="travel-map__loading">Loading interactive map</p>
       </div>
 
       <dialog class="travel-album" id="yosemite-album" aria-labelledby="yosemite-album-title">

@@ -15,8 +15,10 @@
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/css/tokens.css">
     <link rel="stylesheet" href="/assets/css/site.css">
+    {% if interactiveMap %}<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">{% endif %}
     {% if pageStyle %}<link rel="stylesheet" href="/assets/css/pages/{{ pageStyle }}.css">{% endif %}
     <link rel="stylesheet" href="/assets/css/refinements.css">
+    {% if interactiveMap %}<script src="/assets/vendor/leaflet/leaflet.js" defer></script>{% endif %}
     <script src="/assets/js/main.js" defer></script>
   </head>
   <body class="page page--{{ pageKey }}">
