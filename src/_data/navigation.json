@@ -2,5 +2,5 @@
   { "key": "home", "label": "Home", "url": "/" },
   { "key": "research", "label": "Research", "url": "/research/" },
   { "key": "resume", "label": "Résumé", "url": "/resume/" },
-  { "key": "beyond", "label": "Beyond research", "url": "/beyond-research/" }
+  { "key": "miscellaneous", "label": "Miscellaneous", "url": "/miscellaneous/" }
 ]

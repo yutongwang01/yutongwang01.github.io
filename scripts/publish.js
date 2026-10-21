@@ -1,7 +1,7 @@
 import { cpSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const files = ["index.html", "404.html"];
-const directories = ["assets", "files", "research", "resume", "beyond-research"];
+const directories = ["assets", "research", "resume", "miscellaneous"];
 
 for (const file of files) {
   cpSync(`_site/${file}`, file);
@@ -16,7 +16,7 @@ const htmlFiles = [
   ...files,
   "research/index.html",
   "resume/index.html",
-  "beyond-research/index.html"
+  "miscellaneous/index.html"
 ];
 
 for (const file of htmlFiles) {
