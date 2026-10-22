@@ -74,6 +74,14 @@ if(travelMapElement&&window.L){
       tooltipDirection:"right",
       tooltipOffset:[10,0],
       ariaLabel:"Open the Anshun, Guizhou photo album"
+    },
+    {
+      name:"Zhaotong",
+      coordinates:[27.337,103.717],
+      albumId:"zhaotong-album",
+      tooltipDirection:"bottom",
+      tooltipOffset:[0,10],
+      ariaLabel:"Open the Zhaotong, Yunnan photo album"
     }
   ];
   const worldBounds=L.latLngBounds([[-85.0511,-180],[85.0511,180]]);
