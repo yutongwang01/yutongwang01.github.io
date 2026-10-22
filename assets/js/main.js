@@ -34,11 +34,26 @@ document.querySelectorAll("[data-travel-dialog]").forEach(trigger=>{
 
 const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
-  const yosemite=[37.8651,-119.5383];
+  const places=[
+    {
+      name:"Yosemite",
+      coordinates:[37.8651,-119.5383],
+      albumId:"yosemite-album",
+      tooltipDirection:"right",
+      ariaLabel:"Open the Yosemite National Park photo album"
+    },
+    {
+      name:"Leshan",
+      coordinates:[29.5521,103.7656],
+      albumId:"leshan-album",
+      tooltipDirection:"left",
+      ariaLabel:"Open the Leshan, Sichuan photo album"
+    }
+  ];
   const worldBounds=L.latLngBounds([[-85.0511,-180],[85.0511,180]]);
   const worldWidth=Math.max(window.innerWidth,256);
   const initialZoom=Math.max(1,Math.min(4,Math.round(Math.log2(worldWidth/256))));
-  const initialCenter=window.innerWidth<720?[20,-30]:[20,0];
+  const initialCenter=window.innerWidth<720?[30,-8]:[20,0];
   const map=L.map(travelMapElement,{
     zoomControl:true,
     minZoom:1,
@@ -52,25 +67,32 @@ if(travelMapElement&&window.L){
     bounds:worldBounds,
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
-  const marker=L.circleMarker(yosemite,{
-    radius:8,
-    color:"#f5f1e8",
-    weight:4,
-    fillColor:"#0b4f82",
-    fillOpacity:1
-  }).addTo(map).bindTooltip("Yosemite",{permanent:true,direction:"right",offset:[10,0],className:"travel-map__tooltip"});
-  const markerElement=marker.getElement();
-  markerElement.setAttribute("role","button");
-  markerElement.setAttribute("tabindex","0");
-  markerElement.setAttribute("aria-label","Open the Yosemite National Park photo album");
-  const album=document.getElementById(travelMapElement.dataset.album);
-  const openAlbum=()=>showTravelDialog(album,markerElement);
-  marker.on("click",openAlbum);
-  markerElement.addEventListener("keydown",event=>{
-    if(event.key==="Enter"||event.key===" "){
-      event.preventDefault();
-      openAlbum();
-    }
+  places.forEach(place=>{
+    const marker=L.circleMarker(place.coordinates,{
+      radius:8,
+      color:"#f5f1e8",
+      weight:4,
+      fillColor:"#0b4f82",
+      fillOpacity:1
+    }).addTo(map).bindTooltip(place.name,{
+      permanent:true,
+      direction:place.tooltipDirection,
+      offset:[place.tooltipDirection==="left"?-10:10,0],
+      className:"travel-map__tooltip"
+    });
+    const markerElement=marker.getElement();
+    markerElement.setAttribute("role","button");
+    markerElement.setAttribute("tabindex","0");
+    markerElement.setAttribute("aria-label",place.ariaLabel);
+    const album=document.getElementById(place.albumId);
+    const openAlbum=()=>showTravelDialog(album,markerElement);
+    marker.on("click",openAlbum);
+    markerElement.addEventListener("keydown",event=>{
+      if(event.key==="Enter"||event.key===" "){
+        event.preventDefault();
+        openAlbum();
+      }
+    });
   });
   travelMapElement.classList.add("is-ready");
 }
