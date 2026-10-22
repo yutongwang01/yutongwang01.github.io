@@ -76,6 +76,14 @@ if(travelMapElement&&window.L){
       ariaLabel:"Open the Anshun, Guizhou photo album"
     },
     {
+      name:"Guiyang",
+      coordinates:[26.647,106.6302],
+      albumId:"guiyang-album",
+      tooltipDirection:"top",
+      tooltipOffset:[0,-10],
+      ariaLabel:"Open the Guiyang and Guizhou photo album"
+    },
+    {
       name:"Zhaotong",
       coordinates:[27.337,103.717],
       albumId:"zhaotong-album",
