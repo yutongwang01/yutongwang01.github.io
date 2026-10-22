@@ -52,6 +52,14 @@ if(travelMapElement&&window.L){
       ariaLabel:"Open the Seattle World Cup trip photo album"
     },
     {
+      name:"San Diego",
+      coordinates:[32.7157,-117.1611],
+      albumId:"san-diego-album",
+      tooltipDirection:"left",
+      tooltipOffset:[-10,12],
+      ariaLabel:"Open the San Diego, California photo album"
+    },
+    {
       name:"Leshan",
       coordinates:[29.5521,103.7656],
       albumId:"leshan-album",
