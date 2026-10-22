@@ -40,6 +40,7 @@ if(travelMapElement&&window.L){
       coordinates:[37.8651,-119.5383],
       albumId:"yosemite-album",
       tooltipDirection:"right",
+      tooltipOffset:[10,0],
       ariaLabel:"Open the Yosemite National Park photo album"
     },
     {
@@ -47,6 +48,7 @@ if(travelMapElement&&window.L){
       coordinates:[47.6062,-122.3321],
       albumId:"seattle-album",
       tooltipDirection:"left",
+      tooltipOffset:[-10,0],
       ariaLabel:"Open the Seattle World Cup trip photo album"
     },
     {
@@ -54,7 +56,16 @@ if(travelMapElement&&window.L){
       coordinates:[29.5521,103.7656],
       albumId:"leshan-album",
       tooltipDirection:"left",
+      tooltipOffset:[-10,0],
       ariaLabel:"Open the Leshan, Sichuan photo album"
+    },
+    {
+      name:"Anshun",
+      coordinates:[26.2531,105.9476],
+      albumId:"anshun-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,0],
+      ariaLabel:"Open the Anshun, Guizhou photo album"
     }
   ];
   const worldBounds=L.latLngBounds([[-85.0511,-180],[85.0511,180]]);
@@ -83,8 +94,9 @@ if(travelMapElement&&window.L){
       fillOpacity:1
     }).addTo(map).bindTooltip(place.name,{
       permanent:true,
+      interactive:true,
       direction:place.tooltipDirection,
-      offset:[place.tooltipDirection==="left"?-10:10,0],
+      offset:place.tooltipOffset,
       className:"travel-map__tooltip"
     });
     const markerElement=marker.getElement();
@@ -94,6 +106,7 @@ if(travelMapElement&&window.L){
     const album=document.getElementById(place.albumId);
     const openAlbum=()=>showTravelDialog(album,markerElement);
     marker.on("click",openAlbum);
+    marker.getTooltip().getElement()?.addEventListener("click",openAlbum);
     markerElement.addEventListener("keydown",event=>{
       if(event.key==="Enter"||event.key===" "){
         event.preventDefault();

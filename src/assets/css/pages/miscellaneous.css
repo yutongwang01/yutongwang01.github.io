@@ -45,7 +45,7 @@
 .travel-map__surface .leaflet-control-zoom a:hover,.travel-map__surface .leaflet-control-zoom a:focus{color:var(--paper);background:var(--ink)}
 .travel-map__surface .leaflet-control-attribution{background:rgba(245,241,232,.88);color:var(--muted);font-size:.68rem}
 .travel-map__surface .leaflet-control-attribution a{color:var(--accent-dark)}
-.travel-map__tooltip{padding:.2rem .45rem;border:0;border-radius:0;background:var(--paper);color:var(--ink);box-shadow:0 .4rem 1rem rgba(16,42,67,.16);font:600 var(--small)/1.2 var(--body)}
+.travel-map__tooltip{padding:.2rem .45rem;border:0;border-radius:0;background:var(--paper);color:var(--ink);box-shadow:0 .4rem 1rem rgba(16,42,67,.16);font:600 var(--small)/1.2 var(--body);cursor:pointer}
 .travel-map__tooltip::before{border-right-color:var(--paper)}
 .travel-map__surface .leaflet-interactive:focus{outline:3px solid rgba(18,103,168,.55);outline-offset:4px}
 
