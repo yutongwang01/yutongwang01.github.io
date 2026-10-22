@@ -43,6 +43,13 @@ if(travelMapElement&&window.L){
       ariaLabel:"Open the Yosemite National Park photo album"
     },
     {
+      name:"Seattle",
+      coordinates:[47.6062,-122.3321],
+      albumId:"seattle-album",
+      tooltipDirection:"left",
+      ariaLabel:"Open the Seattle World Cup trip photo album"
+    },
+    {
       name:"Leshan",
       coordinates:[29.5521,103.7656],
       albumId:"leshan-album",
