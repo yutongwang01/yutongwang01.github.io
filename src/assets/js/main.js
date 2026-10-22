@@ -82,6 +82,14 @@ if(travelMapElement&&window.L){
       tooltipDirection:"bottom",
       tooltipOffset:[0,10],
       ariaLabel:"Open the Zhaotong, Yunnan photo album"
+    },
+    {
+      name:"Beijing",
+      coordinates:[39.9042,116.4074],
+      albumId:"beijing-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,-2],
+      ariaLabel:"Open the Beijing photo album"
     }
   ];
   const worldBounds=L.latLngBounds([[-85.0511,-180],[85.0511,180]]);
