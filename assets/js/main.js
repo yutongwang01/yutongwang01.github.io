@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Santa Barbara",
+      coordinates:[34.414,-119.8489],
+      albumId:"santa-barbara-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,18],
+      ariaLabel:"Open the Santa Barbara and UCSB everyday photo album"
+    },
+    {
       name:"Yosemite",
       coordinates:[37.8651,-119.5383],
       albumId:"yosemite-album",
