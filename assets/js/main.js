@@ -36,6 +36,22 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Venice",
+      coordinates:[45.4408,12.3155],
+      albumId:"venice-album",
+      tooltipDirection:"top",
+      tooltipOffset:[0,-10],
+      ariaLabel:"Open the Venice July 2014 photo album"
+    },
+    {
+      name:"Vatican City",
+      coordinates:[41.9029,12.4534],
+      albumId:"vatican-album",
+      tooltipDirection:"bottom",
+      tooltipOffset:[0,10],
+      ariaLabel:"Open the Vatican City July 2014 photo album"
+    },
+    {
       name:"Los Angeles",
       coordinates:[34.0522,-118.2437],
       albumId:"los-angeles-album",
