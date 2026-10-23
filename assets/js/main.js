@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Hangzhou",
+      coordinates:[30.2741,120.1551],
+      albumId:"hangzhou-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,-4],
+      ariaLabel:"Open the Hangzhou July 2019 photo album"
+    },
+    {
       name:"Xiamen",
       coordinates:[24.4798,118.0894],
       albumId:"xiamen-album",
