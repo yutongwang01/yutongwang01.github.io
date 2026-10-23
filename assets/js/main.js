@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Xiamen",
+      coordinates:[24.4798,118.0894],
+      albumId:"xiamen-album",
+      tooltipDirection:"bottom",
+      tooltipOffset:[0,26],
+      ariaLabel:"Open the Xiamen July 2019 photo album"
+    },
+    {
       name:"Venice",
       coordinates:[45.4408,12.3155],
       albumId:"venice-album",
