@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Los Angeles",
+      coordinates:[34.0522,-118.2437],
+      albumId:"los-angeles-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,46],
+      ariaLabel:"Open the Los Angeles December 2025 photo album"
+    },
+    {
       name:"Santa Barbara",
       coordinates:[34.414,-119.8489],
       albumId:"santa-barbara-album",

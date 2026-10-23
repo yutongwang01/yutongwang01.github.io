@@ -66,6 +66,10 @@
 .travel-album__place h5{margin:0 0 1rem;font:600 clamp(1.1rem,2vw,1.45rem)/1.25 var(--body);color:var(--ink)}
 .travel-album__gallery{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.8fr);gap:clamp(.5rem,1vw,1rem)}
 .travel-album__gallery img{width:100%;height:100%;object-fit:cover;background:var(--paper-deep)}
+.travel-album__gallery--los-angeles{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.travel-album__gallery--los-angeles img{height:auto;object-fit:contain}
+.travel-album__la-wide{grid-column:1/-1}
+:where([aria-labelledby="la-city-title"]) .travel-album__gallery :where(img:nth-child(2)),:where([aria-labelledby="la-coast-title"]) .travel-album__gallery :where(img:nth-child(2)),:where([aria-labelledby="la-universal-title"]) .travel-album__gallery :where(img:nth-child(3)){grid-row:span 2;height:100%;object-fit:cover}
 .travel-album__gallery--santa-barbara{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
 .travel-album__sb-ocean,.travel-album__sb-palms{grid-column:1/-1;aspect-ratio:16/9}
 .travel-album__sb-campus{grid-column:1;grid-row:2;aspect-ratio:16/9}
