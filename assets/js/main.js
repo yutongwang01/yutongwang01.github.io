@@ -36,6 +36,10 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Copenhagen", coordinates:[55.6761,12.5683], albumId:"copenhagen-album",
+      ariaLabel:"Open the Copenhagen July 2014 photo album"
+    },
+    {
       name:"Brussels", coordinates:[50.8503,4.3517], albumId:"brussels-album",
       ariaLabel:"Open the Brussels July 2014 photo album"
     },

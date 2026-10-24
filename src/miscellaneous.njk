@@ -90,6 +90,21 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="copenhagen-album" aria-labelledby="copenhagen-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">Denmark / July 2014</p><h3 id="copenhagen-album-title">Copenhagen</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">Palace squares, the Marble Church's green dome, boats at Nyhavn, and the Little Mermaid beside the harbor.</p>
+          <div class="travel-album__gallery travel-album__gallery--copenhagen">
+            {% for photo in copenhagenPhotos %}
+            <img src="/assets/images/travel/copenhagen-{{ photo.file }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+        </div>
+      </dialog>
+
       <dialog class="travel-album" id="brussels-album" aria-labelledby="brussels-album-title">
         <div class="travel-album__inner">
           <header class="travel-album__header">
