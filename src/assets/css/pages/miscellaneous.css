@@ -118,6 +118,9 @@
 .travel-album__gallery--venice,.travel-album__gallery--vatican{max-width:60rem;margin-inline:auto;grid-template-columns:1fr}
 .travel-album__gallery--venice img,.travel-album__gallery--vatican img{height:auto;object-fit:contain}
 .travel-album__gallery--venice img:nth-child(2){width:min(100%,34rem);justify-self:center}
+.travel-album__gallery--venice-supplement{max-width:60rem;margin:1rem auto 0;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.travel-album__gallery--venice-supplement img{height:auto;object-fit:contain}
+.travel-album__gallery--venice-supplement img:nth-child(n+6){grid-column:1/-1}
 .travel-album__gallery--los-angeles{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .travel-album__gallery--los-angeles img{height:auto;object-fit:contain}
 .travel-album__la-wide{grid-column:1/-1}

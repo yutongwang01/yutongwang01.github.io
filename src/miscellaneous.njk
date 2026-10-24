@@ -363,10 +363,15 @@ permalink: /miscellaneous/index.html
             <div><p class="travel-album__meta">Italy / July 2014</p><h3 id="venice-album-title">Venice</h3></div>
             <button class="travel-album__close" type="button" data-travel-close>Close</button>
           </header>
-          <p class="travel-album__intro">A summer memory from 2014: boats along the waterfront and a quiet canal between warm-colored buildings.</p>
+          <p class="travel-album__intro">Venice in July 2014: church domes and waterfront palaces seen from a boat, busy squares and promenades, and a narrow canal.</p>
           <div class="travel-album__gallery travel-album__gallery--venice">
             <img src="/assets/images/travel/venice-waterfront.jpg" alt="Santa Maria della Salute and the Venice waterfront with boats passing on the water" width="960" height="540" loading="lazy" decoding="async">
             <img src="/assets/images/travel/venice-canal.jpg" alt="Boats moored along a narrow Venetian canal beneath a leaning bell tower" width="540" height="960" loading="lazy" decoding="async">
+          </div>
+          <div class="travel-album__gallery travel-album__gallery--venice-supplement">
+            {% for photo in veniceSupplementPhotos %}
+            <img src="/assets/images/travel/venice-supplement-{{ photo.file }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
           </div>
         </div>
       </dialog>
