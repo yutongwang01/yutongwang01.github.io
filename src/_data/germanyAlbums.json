@@ -1,0 +1,20 @@
+[
+  {
+    "id":"neuschwanstein", "title":"Neuschwanstein Castle",
+    "intro":"A rainy visit to Neuschwanstein Castle, with pale stone towers disappearing into the mist.",
+    "photos":[
+      {"file":"neuschwanstein-castle","alt":"Neuschwanstein Castle's red entrance building and pale towers in the mist above visitors with umbrellas","width":1350,"height":1800},
+      {"file":"neuschwanstein-tower","alt":"A close view of Neuschwanstein Castle's walls and pointed tower in rainy weather","width":640,"height":852}
+    ]
+  },
+  {
+    "id":"dusseldorf", "title":"Düsseldorf & Surroundings",
+    "intro":"Colorful streets, curved harbor buildings, a riverside clock tower, and a fire station visit in nearby Hilden.",
+    "photos":[
+      {"file":"dusseldorf-street","alt":"Colorful apartment buildings and parked cars along a street in Düsseldorf","width":1350,"height":1800},
+      {"file":"dusseldorf-clock","alt":"A stone clock tower beside the river in Düsseldorf","width":640,"height":852},
+      {"file":"dusseldorf-harbor","alt":"Curved metallic building facades in Düsseldorf's harbor district","width":852,"height":640},
+      {"file":"dusseldorf-fire-station","alt":"An orange ladder fire engine marked Feuerwehr Hilden during a fire station visit near Düsseldorf","width":852,"height":640}
+    ]
+  }
+]
