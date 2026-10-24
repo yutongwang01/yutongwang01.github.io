@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Suzhou",
+      coordinates:[31.3243,120.6294],
+      albumId:"suzhou-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,32],
+      ariaLabel:"Open the Suzhou Humble Administrator's Garden July 2019 photo album"
+    },
+    {
       name:"Hangzhou",
       coordinates:[30.2741,120.1551],
       albumId:"hangzhou-album",
