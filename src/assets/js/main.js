@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Wattens", coordinates:[47.2931,11.6008], albumId:"wattens-album",
+      ariaLabel:"Open the Wattens Swarovski Crystal Worlds July 2014 photo album"
+    },
+    {
+      name:"Innsbruck", coordinates:[47.2686,11.3933], albumId:"innsbruck-album",
+      ariaLabel:"Open the Innsbruck Golden Roof July 2014 photo album"
+    },
+    {
       name:"Dujiangyan", coordinates:[31.0049,103.6193], albumId:"dujiangyan-album",
       ariaLabel:"Open the Dujiangyan June 2023 photo album"
     },

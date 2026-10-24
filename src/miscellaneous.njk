@@ -90,6 +90,23 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      {% for album in austriaAlbums %}
+      <dialog class="travel-album" id="{{ album.id }}-album" aria-labelledby="{{ album.id }}-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">Tyrol, Austria / July 2014</p><h3 id="{{ album.id }}-album-title">{{ album.name }}</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">{{ album.intro }}</p>
+          <div class="travel-album__gallery travel-album__gallery--austria{% if album.photos.length == 1 %} travel-album__gallery--austria-single{% endif %}">
+            {% for photo in album.photos %}
+            <img src="/assets/images/travel/{{ photo.file }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+        </div>
+      </dialog>
+      {% endfor %}
+
       <dialog class="travel-album" id="dujiangyan-album" aria-labelledby="dujiangyan-album-title">
         <div class="travel-album__inner">
           <header class="travel-album__header">
