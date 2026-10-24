@@ -35,6 +35,7 @@ document.querySelectorAll("[data-travel-dialog]").forEach(trigger=>{
 const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
+    {name:"Chengdu",coordinates:[30.5728,104.0668],albumId:"chengdu-album",ariaLabel:"Open the Chengdu photo album"},
     {name:"Helsinki",coordinates:[60.1699,24.9384],albumId:"helsinki-album",ariaLabel:"Open the Helsinki July 2014 photo album, the start of my European trip"},
     {name:"Paris",coordinates:[48.8566,2.3522],albumId:"paris-album",ariaLabel:"Open the Paris July 2014 photo album"},
     {name:"Neuschwanstein Castle",coordinates:[47.5576,10.7498],albumId:"neuschwanstein-album",ariaLabel:"Open the Neuschwanstein Castle July 2014 photo album"},

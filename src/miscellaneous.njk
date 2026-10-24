@@ -90,6 +90,21 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="chengdu-album" aria-labelledby="chengdu-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">China</p><h3 id="chengdu-album-title">Chengdu</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro" lang="zh-CN">这是我长大的地方，我热爱这里的美食</p>
+          <div class="travel-album__gallery travel-album__gallery--chengdu">
+            {% for photo in chengduPhotos %}
+            <img src="{{ photo.src }}" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+        </div>
+      </dialog>
+
       <dialog class="travel-album" id="helsinki-album" aria-labelledby="helsinki-album-title">
         <div class="travel-album__inner">
           <header class="travel-album__header">
