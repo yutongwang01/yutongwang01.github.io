@@ -1,0 +1,20 @@
+[
+  {
+    "id":"stockholm-city", "title":"Stockholm",
+    "photos":[
+      {"file":"waterfront-statue","alt":"A bronze musician statue beside the water with Stockholm City Hall in the background","width":640,"height":852},
+      {"file":"golden-hall","alt":"Golden mosaics and a patterned floor inside Stockholm City Hall","width":640,"height":852},
+      {"file":"city-hall-courtyard","alt":"A tree surrounded by the red-brick walls of Stockholm City Hall","width":640,"height":852},
+      {"file":"city-hall-tower","alt":"A green-roofed brick tower, ivy-covered walls, and steps in the City Hall courtyard","width":640,"height":852},
+      {"file":"vasa-model","alt":"A detailed wooden sailing ship model displayed at the Vasa Museum","width":852,"height":640}
+    ]
+  },
+  {
+    "id":"sweden-water", "title":"On the water",
+    "photos":[
+      {"file":"cruise-harbor","alt":"A white cruise ship and smaller boats passing through a sunny harbor","width":640,"height":852},
+      {"file":"cruise-deck","alt":"Passengers on an open ship deck beneath glowing evening clouds","width":640,"height":852},
+      {"file":"cruise-evening","alt":"A calm harbor and shoreline viewed from a ship beneath pastel clouds","width":852,"height":640}
+    ]
+  }
+]
