@@ -37,160 +37,122 @@ if(travelMapElement&&window.L){
   const places=[
     {
       name:"Xi'an", coordinates:[34.2658,108.9541], albumId:"xian-album",
-      tooltipDirection:"top", tooltipOffset:[0,-10],
       ariaLabel:"Open the Xi'an November 2023 photo album"
     },
     {
       name:"Tokyo", coordinates:[35.6762,139.6503], albumId:"tokyo-album",
-      tooltipDirection:"right", tooltipOffset:[10,0],
       ariaLabel:"Open the Tokyo August 2017 photo album"
     },
     {
       name:"Mount Fuji", coordinates:[35.4308,138.8006], albumId:"mount-fuji-album",
-      tooltipDirection:"top", tooltipOffset:[0,-38],
       ariaLabel:"Open the Mount Fuji and surroundings August 2017 photo album"
     },
     {
       name:"Kyoto", coordinates:[35.0116,135.7681], albumId:"kyoto-album",
-      tooltipDirection:"top", tooltipOffset:[0,-10],
       ariaLabel:"Open the Kyoto August 2017 photo album"
     },
     {
       name:"Osaka", coordinates:[34.6937,135.5023], albumId:"osaka-album",
-      tooltipDirection:"left", tooltipOffset:[-10,8],
       ariaLabel:"Open the Osaka August 2017 photo album"
     },
     {
       name:"Nara", coordinates:[34.6851,135.8048], albumId:"nara-album",
-      tooltipDirection:"bottom", tooltipOffset:[0,24],
       ariaLabel:"Open the Nara August 2017 photo album"
     },
     {
       name:"Shanghai",
       coordinates:[31.2304,121.4737],
       albumId:"shanghai-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,62],
       ariaLabel:"Open the Shanghai July 2019 photo album"
     },
     {
       name:"Suzhou",
       coordinates:[31.3243,120.6294],
       albumId:"suzhou-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,32],
       ariaLabel:"Open the Suzhou Humble Administrator's Garden July 2019 photo album"
     },
     {
       name:"Hangzhou",
       coordinates:[30.2741,120.1551],
       albumId:"hangzhou-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,-4],
       ariaLabel:"Open the Hangzhou July 2019 photo album"
     },
     {
       name:"Xiamen",
       coordinates:[24.4798,118.0894],
       albumId:"xiamen-album",
-      tooltipDirection:"bottom",
-      tooltipOffset:[0,26],
       ariaLabel:"Open the Xiamen July 2019 photo album"
     },
     {
       name:"Venice",
       coordinates:[45.4408,12.3155],
       albumId:"venice-album",
-      tooltipDirection:"top",
-      tooltipOffset:[0,-10],
       ariaLabel:"Open the Venice July 2014 photo album"
     },
     {
       name:"Vatican City",
       coordinates:[41.9029,12.4534],
       albumId:"vatican-album",
-      tooltipDirection:"bottom",
-      tooltipOffset:[0,10],
       ariaLabel:"Open the Vatican City July 2014 photo album"
     },
     {
       name:"Los Angeles",
       coordinates:[34.0522,-118.2437],
       albumId:"los-angeles-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,46],
       ariaLabel:"Open the Los Angeles December 2025 photo album"
     },
     {
       name:"Santa Barbara",
       coordinates:[34.414,-119.8489],
       albumId:"santa-barbara-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,18],
       ariaLabel:"Open the Santa Barbara and UCSB everyday photo album"
     },
     {
       name:"Yosemite",
       coordinates:[37.8651,-119.5383],
       albumId:"yosemite-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,0],
       ariaLabel:"Open the Yosemite National Park photo album"
     },
     {
       name:"Seattle",
       coordinates:[47.6062,-122.3321],
       albumId:"seattle-album",
-      tooltipDirection:"left",
-      tooltipOffset:[-10,0],
       ariaLabel:"Open the Seattle World Cup trip photo album"
     },
     {
       name:"San Diego",
       coordinates:[32.7157,-117.1611],
       albumId:"san-diego-album",
-      tooltipDirection:"left",
-      tooltipOffset:[-10,12],
       ariaLabel:"Open the San Diego, California photo album"
     },
     {
       name:"Leshan",
       coordinates:[29.5521,103.7656],
       albumId:"leshan-album",
-      tooltipDirection:"left",
-      tooltipOffset:[-10,0],
       ariaLabel:"Open the Leshan, Sichuan photo album"
     },
     {
       name:"Anshun",
       coordinates:[26.2531,105.9476],
       albumId:"anshun-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,0],
       ariaLabel:"Open the Anshun, Guizhou photo album"
     },
     {
       name:"Guiyang",
       coordinates:[26.647,106.6302],
       albumId:"guiyang-album",
-      tooltipDirection:"top",
-      tooltipOffset:[0,-10],
       ariaLabel:"Open the Guiyang and Guizhou photo album"
     },
     {
       name:"Zhaotong",
       coordinates:[27.337,103.717],
       albumId:"zhaotong-album",
-      tooltipDirection:"bottom",
-      tooltipOffset:[0,10],
       ariaLabel:"Open the Zhaotong, Yunnan photo album"
     },
     {
       name:"Beijing",
       coordinates:[39.9042,116.4074],
       albumId:"beijing-album",
-      tooltipDirection:"right",
-      tooltipOffset:[10,-2],
       ariaLabel:"Open the Beijing photo album"
     }
   ];
@@ -218,13 +180,7 @@ if(travelMapElement&&window.L){
       weight:4,
       fillColor:"#0b4f82",
       fillOpacity:1
-    }).addTo(map).bindTooltip(place.name,{
-      permanent:true,
-      interactive:true,
-      direction:place.tooltipDirection,
-      offset:place.tooltipOffset,
-      className:"travel-map__tooltip"
-    });
+    }).addTo(map);
     const markerElement=marker.getElement();
     markerElement.setAttribute("role","button");
     markerElement.setAttribute("tabindex","0");
@@ -232,7 +188,6 @@ if(travelMapElement&&window.L){
     const album=document.getElementById(place.albumId);
     const openAlbum=()=>showTravelDialog(album,markerElement);
     marker.on("click",openAlbum);
-    marker.getTooltip().getElement()?.addEventListener("click",openAlbum);
     markerElement.addEventListener("keydown",event=>{
       if(event.key==="Enter"||event.key===" "){
         event.preventDefault();
