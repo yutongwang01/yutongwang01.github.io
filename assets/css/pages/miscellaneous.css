@@ -66,6 +66,10 @@
 .travel-album__place h5{margin:0 0 1rem;font:600 clamp(1.1rem,2vw,1.45rem)/1.25 var(--body);color:var(--ink)}
 .travel-album__gallery{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.8fr);gap:clamp(.5rem,1vw,1rem)}
 .travel-album__gallery img{width:100%;height:100%;object-fit:cover;background:var(--paper-deep)}
+.travel-album__gallery--shanghai{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.travel-album__gallery--shanghai img{height:auto}
+.travel-album__gallery--shanghai img:first-child,.travel-album__gallery--shanghai img:last-child{grid-column:1/-1}
+.travel-album__gallery--shanghai img:nth-child(5){width:min(100%,28rem);justify-self:center}
 .travel-album__gallery--suzhou{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .travel-album__gallery--suzhou img{height:auto}
 .travel-album__gallery--suzhou :where(img:first-child){grid-row:1/3;height:100%;object-position:center}

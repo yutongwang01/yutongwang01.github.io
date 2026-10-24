@@ -36,6 +36,14 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Shanghai",
+      coordinates:[31.2304,121.4737],
+      albumId:"shanghai-album",
+      tooltipDirection:"right",
+      tooltipOffset:[10,62],
+      ariaLabel:"Open the Shanghai 2019 photo album"
+    },
+    {
       name:"Suzhou",
       coordinates:[31.3243,120.6294],
       albumId:"suzhou-album",
