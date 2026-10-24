@@ -333,11 +333,22 @@ permalink: /miscellaneous/index.html
             <div><p class="travel-album__meta">Vatican City / July 2014</p><h3 id="vatican-album-title">Vatican City</h3></div>
             <button class="travel-album__close" type="button" data-travel-close>Close</button>
           </header>
-          <p class="travel-album__intro">July sunlight over St. Peter's Square, its colonnades, and the basilica.</p>
+          <p class="travel-album__intro">From the sunlight of St. Peter's Square to the basilica's gilded vaults, marble monuments, and shafts of light.</p>
+          <section class="travel-album__chapter" aria-labelledby="vatican-square-title">
+          <header class="travel-album__chapter-header"><h4 id="vatican-square-title">St. Peter's Square</h4></header>
           <div class="travel-album__gallery travel-album__gallery--vatican">
             <img src="/assets/images/travel/vatican-basilica.jpg" alt="St. Peter's Basilica and the obelisk seen across St. Peter's Square" width="960" height="540" loading="lazy" decoding="async">
             <img src="/assets/images/travel/vatican-square.jpg" alt="The obelisk and curved colonnades of St. Peter's Square beneath summer clouds" width="960" height="540" loading="lazy" decoding="async">
           </div>
+          </section>
+          <section class="travel-album__chapter" aria-labelledby="vatican-interior-title">
+            <header class="travel-album__chapter-header"><h4 id="vatican-interior-title">Inside the basilica</h4></header>
+            <div class="travel-album__gallery travel-album__gallery--vatican-interior">
+              {% for photo in vaticanInteriorPhotos %}
+              <img src="/assets/images/travel/vatican-{{ photo.id }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+              {% endfor %}
+            </div>
+          </section>
         </div>
       </dialog>
 
