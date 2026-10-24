@@ -67,6 +67,8 @@
 .travel-album__gallery--vatican-interior{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .travel-album__gallery--vatican-interior img{height:auto;object-fit:contain}
 .travel-album__gallery--vatican-interior img:last-child{grid-column:1/-1;max-width:30rem;justify-self:center}
+.travel-album__gallery--zaanse-schans{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);align-items:start}
+.travel-album__gallery--zaanse-schans img{height:auto;object-fit:contain}
 .travel-album__gallery--lucerne{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .travel-album__gallery--lucerne img{height:auto;object-fit:contain}
 .travel-album__gallery--lucerne img:nth-child(3),.travel-album__gallery--lucerne img:last-child{grid-column:1/-1}

@@ -35,6 +35,7 @@ document.querySelectorAll("[data-travel-dialog]").forEach(trigger=>{
 const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
+    {name:"Zaanse Schans",coordinates:[52.4737,4.8160],albumId:"zaanse-schans-album",ariaLabel:"Open the Zaanse Schans July 2014 photo album"},
     {name:"Lucerne",coordinates:[47.0502,8.3093],albumId:"lucerne-album",ariaLabel:"Open the Lucerne and Lake Lucerne July 2014 photo album"},
     {
       name:"Stockholm", coordinates:[59.3293,18.0686], albumId:"stockholm-album",
