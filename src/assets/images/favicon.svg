@@ -1,4 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="王">
-  <rect width="64" height="64" rx="10" fill="#102a43"/>
-  <path d="M16 15H48M18 31H46M13 49H51M32 15V49" fill="none" stroke="#f5f1e8" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Stitch">
+  <title>Stitch</title>
+  <rect width="64" height="64" rx="16" fill="#f5f1e8"/>
+  <!-- Wide, notched ears keep the silhouette recognizable at tab size. -->
+  <path d="M23 30C17 19 7 12 2 16L4 26L7 27L5 31C8 42 16 47 24 43Z" fill="#267eb5"/>
+  <path d="M41 30C47 19 57 12 62 16L60 26L57 27L59 31C56 42 48 47 40 43Z" fill="#267eb5"/>
+  <path d="M20 33C15 25 9 20 6 20C8 32 12 39 20 40Z" fill="#c78ba8"/>
+  <path d="M44 33C49 25 55 20 58 20C56 32 52 39 44 40Z" fill="#c78ba8"/>
+  <path d="M14 42C14 30 20 23 28 22L27 17L33 21L37 18L38 23C46 25 50 32 50 42C50 54 42 59 32 59S14 54 14 42Z" fill="#318ec4"/>
+  <path d="M17 42C17 34 22 30 26 32C30 34 29 44 26 48C22 52 17 49 17 42ZM47 42C47 34 42 30 38 32C34 34 35 44 38 48C42 52 47 49 47 42Z" fill="#94cee0"/>
+  <ellipse cx="23" cy="40" rx="4" ry="6" fill="#122d47"/>
+  <ellipse cx="41" cy="40" rx="4" ry="6" fill="#122d47"/>
+  <path d="M25 46C25 42 39 42 39 46C39 50 35 52 32 52S25 50 25 46Z" fill="#163e66"/>
+  <path d="M24 53Q32 58 40 53" fill="none" stroke="#163e66" stroke-width="2" stroke-linecap="round"/>
 </svg>
