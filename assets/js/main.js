@@ -36,6 +36,11 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Xi'an", coordinates:[34.2658,108.9541], albumId:"xian-album",
+      tooltipDirection:"top", tooltipOffset:[0,-10],
+      ariaLabel:"Open the Xi'an November 2023 photo album"
+    },
+    {
       name:"Tokyo", coordinates:[35.6762,139.6503], albumId:"tokyo-album",
       tooltipDirection:"right", tooltipOffset:[10,0],
       ariaLabel:"Open the Tokyo August 2017 photo album"
