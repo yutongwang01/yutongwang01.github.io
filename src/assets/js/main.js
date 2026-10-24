@@ -36,6 +36,31 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Tokyo", coordinates:[35.6762,139.6503], albumId:"tokyo-album",
+      tooltipDirection:"right", tooltipOffset:[10,0],
+      ariaLabel:"Open the Tokyo August 2017 photo album"
+    },
+    {
+      name:"Mount Fuji", coordinates:[35.4308,138.8006], albumId:"mount-fuji-album",
+      tooltipDirection:"top", tooltipOffset:[0,-38],
+      ariaLabel:"Open the Mount Fuji and surroundings August 2017 photo album"
+    },
+    {
+      name:"Kyoto", coordinates:[35.0116,135.7681], albumId:"kyoto-album",
+      tooltipDirection:"top", tooltipOffset:[0,-10],
+      ariaLabel:"Open the Kyoto August 2017 photo album"
+    },
+    {
+      name:"Osaka", coordinates:[34.6937,135.5023], albumId:"osaka-album",
+      tooltipDirection:"left", tooltipOffset:[-10,8],
+      ariaLabel:"Open the Osaka August 2017 photo album"
+    },
+    {
+      name:"Nara", coordinates:[34.6851,135.8048], albumId:"nara-album",
+      tooltipDirection:"bottom", tooltipOffset:[0,24],
+      ariaLabel:"Open the Nara August 2017 photo album"
+    },
+    {
       name:"Shanghai",
       coordinates:[31.2304,121.4737],
       albumId:"shanghai-album",

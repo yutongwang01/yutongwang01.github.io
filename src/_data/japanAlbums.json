@@ -1,0 +1,48 @@
+[
+  {
+    "id": "tokyo", "name": "Tokyo", "region": "Japan",
+    "intro": "Summer in Tokyo: the waterfront at Odaiba, Sensoji's five-story pagoda, and a walk through Ginza.",
+    "photos": [
+      {"file":"tokyo-rainbow-bridge", "alt":"Rainbow Bridge across Tokyo Bay viewed from the Odaiba promenade", "width":800, "height":1066},
+      {"file":"tokyo-odaiba-statue", "alt":"The Statue of Liberty replica overlooking the waterfront in Odaiba", "width":799, "height":1066},
+      {"file":"tokyo-sensoji-pagoda", "alt":"The red five-story pagoda at Sensoji Temple in Asakusa", "width":1350, "height":1800},
+      {"file":"tokyo-ginza", "alt":"Shops and pedestrians along Ginza with a Ginza 7 street sign", "width":1350, "height":1800}
+    ]
+  },
+  {
+    "id": "mount-fuji", "name": "Mount Fuji & Surroundings", "region": "Yamanashi, Japan",
+    "intro": "Lakeside views of Mount Fuji, a stop at the fifth station, and Oshino Hakkai at the foot of the mountain.",
+    "photos": [
+      {"file":"fuji-lakeside-view", "alt":"Mount Fuji rising above clouds across a lake", "width":800, "height":1066},
+      {"file":"fuji-lakeside-grasses", "alt":"Grasses along the lakeshore with Mount Fuji in the distance", "width":800, "height":1066},
+      {"file":"fuji-fifth-station-marker", "alt":"A Mount Fuji fifth-station marker showing an elevation of 2305 meters", "width":800, "height":1066},
+      {"file":"fuji-fifth-station", "alt":"Mount Fuji above a fifth-station sign dated August 2017", "width":801, "height":800},
+      {"file":"fuji-oshino-hakkai", "alt":"A stone marker inscribed with Oshino Hakkai beside spring water", "width":1800, "height":1350}
+    ]
+  },
+  {
+    "id": "kyoto", "name": "Kyoto", "region": "Japan",
+    "intro": "Vermilion torii, the Golden Pavilion beside its pond, and temple architecture beneath the summer sky.",
+    "photos": [
+      {"file":"kyoto-inari-torii", "alt":"Visitors walking beneath vermilion torii at Fushimi Inari Taisha", "width":1080, "height":1440},
+      {"file":"kyoto-kinkakuji-pond", "alt":"The Golden Pavilion at Kinkakuji reflected in its garden pond", "width":1080, "height":1440},
+      {"file":"kyoto-kinkakuji-ticket", "alt":"A paper admission talisman from Kinkakuji held with a temple brochure", "width":1350, "height":1800},
+      {"file":"kyoto-kinkakuji-close", "alt":"A close view of Kinkakuji's golden walls and waterside pavilion", "width":1350, "height":1800},
+      {"file":"kyoto-temple-gate", "alt":"A broad stone approach leading to a large wooden temple gate in Kyoto", "width":1800, "height":1350}
+    ]
+  },
+  {
+    "id": "osaka", "name": "Osaka", "region": "Japan",
+    "intro": "Osaka Castle above a quiet garden pond, with its green roofs reflected in the water.",
+    "photos": [
+      {"file":"osaka-castle-pond", "alt":"Osaka Castle and garden trees reflected in a pond", "width":799, "height":1065}
+    ]
+  },
+  {
+    "id": "nara", "name": "Nara", "region": "Japan",
+    "intro": "A summer encounter with the deer around Nara Park.",
+    "photos": [
+      {"file":"nara-deer", "alt":"Spotted deer gathering among visitors on a stone-paved path in Nara", "width":799, "height":1065}
+    ]
+  }
+]
