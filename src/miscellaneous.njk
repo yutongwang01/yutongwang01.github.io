@@ -90,6 +90,21 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="dali-album" aria-labelledby="dali-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">Yunnan, China / April 2023</p><h3 id="dali-album-title">Dali</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">Spring by the lake: mountain silhouettes, boats along the shore, flowering streets, and quiet courtyard details.</p>
+          <div class="travel-album__gallery travel-album__gallery--dali">
+            {% for photo in daliPhotos %}
+            <img src="/assets/images/travel/dali-{{ photo.id }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+        </div>
+      </dialog>
+
       <dialog class="travel-album" id="xian-album" aria-labelledby="xian-album-title">
         <div class="travel-album__inner">
           <header class="travel-album__header">

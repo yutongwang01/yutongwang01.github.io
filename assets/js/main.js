@@ -36,6 +36,10 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Dali", coordinates:[25.6065,100.2676], albumId:"dali-album",
+      ariaLabel:"Open the Dali April 2023 photo album"
+    },
+    {
       name:"Xi'an", coordinates:[34.2658,108.9541], albumId:"xian-album",
       ariaLabel:"Open the Xi'an November 2023 photo album"
     },
