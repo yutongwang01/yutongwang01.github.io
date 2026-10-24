@@ -1,0 +1,30 @@
+[
+  {
+    "id":"florence", "title":"Florence",
+    "intro":"Giotto's Campanile and the marble walls and red-tiled dome of Florence Cathedral.",
+    "chapters":[{"id":"cathedral","title":"Florence Cathedral & Giotto's Campanile","photos":[
+      {"file":"florence-cathedral-1","alt":"Giotto's Campanile rising beside Florence Cathedral beneath a blue sky","width":1350,"height":1800},
+      {"file":"florence-cathedral-2","alt":"The red-tiled cathedral dome above patterned marble walls in Florence","width":1800,"height":1350},
+      {"file":"florence-cathedral-3","alt":"An upward view of Florence Cathedral's dome and decorative marble exterior","width":1350,"height":1800}
+    ]}]
+  },
+  {
+    "id":"rome", "title":"Rome",
+    "intro":"The Colosseum, monumental arches and squares, and the marble chapels inside the Pantheon.",
+    "chapters":[
+      {"id":"city","title":"Around Rome","photos":[
+        {"file":"rome-city-2","alt":"The arched walls of the Colosseum behind pine trees and visitors","width":1800,"height":1350},
+        {"file":"rome-city-1","alt":"Visitors photographing a monumental stone arch beside the Colosseum","width":1350,"height":1800},
+        {"file":"rome-city-3","alt":"A marble figure and horse beneath a tall obelisk in Rome","width":1350,"height":1800},
+        {"file":"rome-city-4","alt":"A white colonnaded monument with Italian flags above a busy Roman square","width":1800,"height":1350}
+      ]},
+      {"id":"pantheon","title":"Inside the Pantheon","photos":[
+        {"file":"rome-pantheon-1","alt":"A marble altar beneath a gold and blue decorated apse in the Pantheon","width":1350,"height":1800},
+        {"file":"rome-pantheon-2","alt":"A crucifix and small altar between tall marble columns inside the Pantheon","width":1350,"height":1800},
+        {"file":"rome-pantheon-4","alt":"A sculpture of a mother holding a child in a marble niche inside the Pantheon","width":1350,"height":1800},
+        {"file":"rome-pantheon-5","alt":"A red stone royal memorial with flowers and a cross-shaped wreath inside the Pantheon","width":1350,"height":1800},
+        {"file":"rome-pantheon-3","alt":"An inscribed stone tomb beneath an illuminated arch inside the Pantheon","width":1800,"height":1350}
+      ]}
+    ]
+  }
+]
