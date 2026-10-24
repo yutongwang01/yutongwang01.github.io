@@ -1,0 +1,18 @@
+[
+  {"id":"city","title":"Along the Seine & Around Paris","photos":[
+    {"file":"eiffel-river","alt":"The Eiffel Tower above boats moored along the Seine","width":540,"height":960},
+    {"file":"notre-dame-front","alt":"The twin towers and rose window of Notre-Dame above riverside steps","width":1350,"height":1800},
+    {"file":"notre-dame-rear","alt":"The spire and flying buttresses of Notre-Dame seen from the Seine in 2014","width":1350,"height":1800},
+    {"file":"concorde-obelisk","alt":"The obelisk at Place de la Concorde beneath a blue sky","width":1350,"height":1800},
+    {"file":"arc-de-triomphe","alt":"The Arc de Triomphe and its sculpted stone facade seen from the street","width":1350,"height":1800},
+    {"file":"eiffel-bridge","alt":"The Eiffel Tower behind a bridge spanning the Seine","width":960,"height":540},
+    {"file":"seine-panorama","alt":"An elevated view across the Seine, riverboats, bridges, and Paris rooftops","width":960,"height":540}
+  ]},
+  {"id":"louvre","title":"The Louvre","photos":[
+    {"file":"louvre-pyramid","alt":"The Louvre's glass pyramid and palace courtyard with visitors","width":1350,"height":1800},
+    {"file":"carrousel-arch","alt":"The Arc de Triomphe du Carrousel topped with a chariot sculpture beside the Louvre","width":1350,"height":1800},
+    {"file":"mona-lisa","alt":"The Mona Lisa in its ornate frame with museum visitors in the foreground","width":1350,"height":1800},
+    {"file":"louvre-bust","alt":"A pale stone bust wearing an Egyptian-style headdress between marble columns in the Louvre","width":1350,"height":1800},
+    {"file":"louvre-lion","alt":"A marble lion sculpture in a vaulted gallery of the Louvre","width":1800,"height":1350}
+  ]}
+]

@@ -90,6 +90,26 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="paris-album" aria-labelledby="paris-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">France / July 2014</p><h3 id="paris-album-title">Paris</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">The Eiffel Tower and Notre-Dame from the Seine, the Arc de Triomphe and Place de la Concorde, and a visit to the Louvre.</p>
+          {% for chapter in parisChapters %}
+          <section class="travel-album__chapter" aria-labelledby="paris-{{ chapter.id }}-title">
+            <header class="travel-album__chapter-header"><h4 id="paris-{{ chapter.id }}-title">{{ chapter.title }}</h4></header>
+            <div class="travel-album__gallery travel-album__gallery--paris">
+              {% for photo in chapter.photos %}
+              <img src="/assets/images/travel/paris-{{ photo.file }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+              {% endfor %}
+            </div>
+          </section>
+          {% endfor %}
+        </div>
+      </dialog>
+
       {% for album in germanyAlbums %}
       <dialog class="travel-album" id="{{ album.id }}-album" aria-labelledby="{{ album.id }}-album-title">
         <div class="travel-album__inner">

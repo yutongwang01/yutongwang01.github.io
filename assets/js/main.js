@@ -35,6 +35,7 @@ document.querySelectorAll("[data-travel-dialog]").forEach(trigger=>{
 const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
+    {name:"Paris",coordinates:[48.8566,2.3522],albumId:"paris-album",ariaLabel:"Open the Paris July 2014 photo album"},
     {name:"Neuschwanstein Castle",coordinates:[47.5576,10.7498],albumId:"neuschwanstein-album",ariaLabel:"Open the Neuschwanstein Castle July 2014 photo album"},
     {name:"Düsseldorf",coordinates:[51.2277,6.7735],albumId:"dusseldorf-album",ariaLabel:"Open the Düsseldorf and surroundings July 2014 photo album"},
     {name:"Florence",coordinates:[43.7731,11.2560],albumId:"florence-album",ariaLabel:"Open the Florence July 2014 photo album"},
