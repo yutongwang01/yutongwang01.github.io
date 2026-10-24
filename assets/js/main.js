@@ -35,6 +35,7 @@ document.querySelectorAll("[data-travel-dialog]").forEach(trigger=>{
 const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
+    {name:"Lucerne",coordinates:[47.0502,8.3093],albumId:"lucerne-album",ariaLabel:"Open the Lucerne and Lake Lucerne July 2014 photo album"},
     {
       name:"Stockholm", coordinates:[59.3293,18.0686], albumId:"stockholm-album",
       ariaLabel:"Open the Stockholm and Sweden July 2014 photo album"

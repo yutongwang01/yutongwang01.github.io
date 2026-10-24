@@ -90,6 +90,21 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="lucerne-album" aria-labelledby="lucerne-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">Switzerland / July 2014</p><h3 id="lucerne-album-title">Lucerne &amp; Lake Lucerne</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">Chapel Bridge, the Lion Monument, and lakeside villages beneath misty mountains.</p>
+          <div class="travel-album__gallery travel-album__gallery--lucerne">
+            {% for photo in lucernePhotos %}
+            <img src="/assets/images/travel/lucerne-{{ photo.file }}.jpg" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+        </div>
+      </dialog>
+
       <dialog class="travel-album" id="stockholm-album" aria-labelledby="stockholm-album-title">
         <div class="travel-album__inner">
           <header class="travel-album__header">
