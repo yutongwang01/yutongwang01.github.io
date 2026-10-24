@@ -41,7 +41,7 @@ if(travelMapElement&&window.L){
       albumId:"shanghai-album",
       tooltipDirection:"right",
       tooltipOffset:[10,62],
-      ariaLabel:"Open the Shanghai 2019 photo album"
+      ariaLabel:"Open the Shanghai July 2019 photo album"
     },
     {
       name:"Suzhou",
