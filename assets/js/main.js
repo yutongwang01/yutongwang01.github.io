@@ -36,6 +36,10 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Dujiangyan", coordinates:[31.0049,103.6193], albumId:"dujiangyan-album",
+      ariaLabel:"Open the Dujiangyan June 2023 photo album"
+    },
+    {
       name:"Dali", coordinates:[25.6065,100.2676], albumId:"dali-album",
       ariaLabel:"Open the Dali April 2023 photo album"
     },
