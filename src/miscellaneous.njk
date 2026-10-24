@@ -90,6 +90,21 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="anyue-album" aria-labelledby="anyue-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">China</p><h3 id="anyue-album-title">Anyue</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro" lang="zh-CN">这是我的家乡，中国柠檬之都、中国佛雕之都，在安岳我很喜欢去钓鱼</p>
+          <div class="travel-album__gallery travel-album__gallery--anyue">
+            {% for photo in anyuePhotos %}
+            <img src="{{ photo.src }}" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+        </div>
+      </dialog>
+
       <dialog class="travel-album" id="chengdu-album" aria-labelledby="chengdu-album-title">
         <div class="travel-album__inner">
           <header class="travel-album__header">

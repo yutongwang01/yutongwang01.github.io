@@ -67,6 +67,9 @@
 .travel-album__gallery--vatican-interior{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .travel-album__gallery--vatican-interior img{height:auto;object-fit:contain}
 .travel-album__gallery--vatican-interior img:last-child{grid-column:1/-1;max-width:30rem;justify-self:center}
+.travel-album__gallery--anyue{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;max-width:60rem;margin-inline:auto}
+.travel-album__gallery--anyue img{height:auto;object-fit:contain}
+.travel-album__gallery--anyue img:first-child,.travel-album__gallery--anyue img:last-child{grid-column:1/-1}
 .travel-album__gallery--chengdu{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;max-width:60rem;margin-inline:auto}
 .travel-album__gallery--chengdu img{height:auto;object-fit:contain}
 .travel-album__gallery--chengdu img:first-child{grid-row:span 2}
