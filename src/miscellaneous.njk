@@ -90,6 +90,21 @@ permalink: /miscellaneous/index.html
         </div>
       </dialog>
 
+      <dialog class="travel-album" id="brussels-album" aria-labelledby="brussels-album-title">
+        <div class="travel-album__inner">
+          <header class="travel-album__header">
+            <div><p class="travel-album__meta">Belgium / July 2014</p><h3 id="brussels-album-title">Brussels</h3></div>
+            <button class="travel-album__close" type="button" data-travel-close>Close</button>
+          </header>
+          <p class="travel-album__intro">Silver spheres, a small fountain, and ornate architecture beneath a gray summer sky.</p>
+          <div class="travel-album__gallery travel-album__gallery--brussels">
+            <img src="/assets/images/travel/brussels-atomium.jpg" alt="The Atomium's silver spheres rising above a fountain and visitors" width="1350" height="1800" loading="lazy" decoding="async">
+            <img src="/assets/images/travel/brussels-town-hall.jpg" alt="Brussels Town Hall with its ornate facade and tall Gothic tower" width="1350" height="1800" loading="lazy" decoding="async">
+            <img src="/assets/images/travel/brussels-manneken-pis.jpg" alt="The Manneken Pis fountain statue with flowers beneath its stone niche" width="1350" height="1800" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </dialog>
+
       {% for album in austriaAlbums %}
       <dialog class="travel-album" id="{{ album.id }}-album" aria-labelledby="{{ album.id }}-album-title">
         <div class="travel-album__inner">

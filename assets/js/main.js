@@ -36,6 +36,10 @@ const travelMapElement=document.querySelector("[data-travel-map]");
 if(travelMapElement&&window.L){
   const places=[
     {
+      name:"Brussels", coordinates:[50.8503,4.3517], albumId:"brussels-album",
+      ariaLabel:"Open the Brussels July 2014 photo album"
+    },
+    {
       name:"Wattens", coordinates:[47.2931,11.6008], albumId:"wattens-album",
       ariaLabel:"Open the Wattens Swarovski Crystal Worlds July 2014 photo album"
     },
