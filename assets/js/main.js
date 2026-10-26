@@ -41,8 +41,8 @@ if(travelMapElement&&window.L){
     {name:"Paris",coordinates:[48.8566,2.3522],albumId:"paris-album",ariaLabel:"Open the Paris July 2014 photo album"},
     {name:"Neuschwanstein Castle",coordinates:[47.5576,10.7498],albumId:"neuschwanstein-album",ariaLabel:"Open the Neuschwanstein Castle July 2014 photo album"},
     {name:"Düsseldorf",coordinates:[51.2277,6.7735],albumId:"dusseldorf-album",ariaLabel:"Open the Düsseldorf and surroundings July 2014 photo album"},
-    {name:"Florence",coordinates:[43.7731,11.2560],albumId:"florence-album",ariaLabel:"Open the Florence July 2014 photo album"},
-    {name:"Rome",coordinates:[41.8902,12.4922],albumId:"rome-album",ariaLabel:"Open the Rome July 2014 photo album"},
+    {name:"Florence",coordinates:[43.7731,11.2560],albumId:"florence-album",ariaLabel:"Open the Florence August 2014 photo album"},
+    {name:"Rome",coordinates:[41.8902,12.4922],albumId:"rome-album",ariaLabel:"Open the Rome August 2014 photo album"},
     {name:"Bokrijk (location to be confirmed)",coordinates:[50.9661,5.4087],albumId:"bokrijk-album",ariaLabel:"Open the Bokrijk July 2014 photo album, location to be confirmed"},
     {name:"Zaanse Schans",coordinates:[52.4737,4.8160],albumId:"zaanse-schans-album",ariaLabel:"Open the Zaanse Schans July 2014 photo album"},
     {name:"Lucerne",coordinates:[47.0502,8.3093],albumId:"lucerne-album",ariaLabel:"Open the Lucerne and Lake Lucerne July 2014 photo album"},
@@ -126,13 +126,13 @@ if(travelMapElement&&window.L){
       name:"Venice",
       coordinates:[45.4408,12.3155],
       albumId:"venice-album",
-      ariaLabel:"Open the Venice July 2014 photo album"
+      ariaLabel:"Open the Venice August 2014 photo album"
     },
     {
       name:"Vatican City",
       coordinates:[41.9029,12.4534],
       albumId:"vatican-album",
-      ariaLabel:"Open the Vatican City July 2014 photo album"
+      ariaLabel:"Open the Vatican City August 2014 photo album"
     },
     {
       name:"Los Angeles",
